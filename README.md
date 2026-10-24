@@ -8,4 +8,4 @@
 - Contract role analysis
 - Coffee chat (warm  channel)
 
-### Drop these skills in your job search thread or job hunt project space and
+### Drop these skills in your job search thread or job hunt project space across all AI platforms to maximize you search. Alaways open to feedback and contributions (.md coming soon)
