@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 40" width="240" height="200" shape-rendering="crispEdges" role="img" aria-labelledby="t">
+  <title id="t">8-bit stack of books</title>
+  <style>
+    .b { animation: sway 1.6s steps(1) infinite; }
+    .b2 { animation-delay: -0.4s; }
+    .b3 { animation-delay: -0.8s; }
+    .b4 { animation: hop 1.6s steps(1) infinite; animation-delay: -1.2s; }
+    @keyframes sway {
+      0%   { transform: translateX(0); }
+      25%  { transform: translateX(1px); }
+      50%  { transform: translateX(0); }
+      75%  { transform: translateX(-1px); }
+    }
+    @keyframes hop {
+      0%   { transform: translate(0, 0); }
+      25%  { transform: translate(1px, -2px); }
+      50%  { transform: translate(0, 0); }
+      75%  { transform: translate(-1px, -1px); }
+    }
+    .spark { animation: blink 1.6s steps(1) infinite; }
+    .spark2 { animation-delay: -0.8s; }
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .b, .b4, .spark { animation: none; }
+    }
+  </style>
+
+  <!-- shadow -->
+  <rect x="9" y="37" width="30" height="1" fill="#000" opacity="0.25"/>
+  <rect x="7" y="36" width="34" height="1" fill="#000" opacity="0.15"/>
+
+  <!-- book 1 (bottom, red) -->
+  <g>
+    <rect x="7" y="29" width="34" height="7" fill="#a22633"/>
+    <rect x="8" y="30" width="32" height="5" fill="#e43b44"/>
+    <rect x="36" y="30" width="3" height="5" fill="#f4f4f4"/>
+    <rect x="36" y="31" width="3" height="1" fill="#c0cbdc"/>
+    <rect x="36" y="33" width="3" height="1" fill="#c0cbdc"/>
+    <rect x="11" y="30" width="1" height="5" fill="#f77622"/>
+    <rect x="14" y="32" width="10" height="1" fill="#feae34"/>
+  </g>
+
+  <!-- book 2 (blue) -->
+  <g class="b b2">
+    <rect x="10" y="23" width="28" height="6" fill="#262b44"/>
+    <rect x="11" y="24" width="26" height="4" fill="#3b5dc9"/>
+    <rect x="11" y="24" width="3" height="4" fill="#f4f4f4"/>
+    <rect x="11" y="25" width="3" height="1" fill="#c0cbdc"/>
+    <rect x="34" y="24" width="1" height="4" fill="#41a6f6"/>
+    <rect x="18" y="25" width="8" height="1" fill="#73eff7"/>
+  </g>
+
+  <!-- book 3 (green) -->
+  <g class="b b3">
+    <rect x="8" y="17" width="30" height="6" fill="#25562e"/>
+    <rect x="9" y="18" width="28" height="4" fill="#38b764"/>
+    <rect x="33" y="18" width="3" height="4" fill="#f4f4f4"/>
+    <rect x="33" y="20" width="3" height="1" fill="#c0cbdc"/>
+    <rect x="12" y="18" width="1" height="4" fill="#a7f070"/>
+    <rect x="15" y="19" width="12" height="1" fill="#a7f070"/>
+  </g>
+
+  <!-- book 4 (top, gold) -->
+  <g class="b4">
+    <rect x="13" y="11" width="22" height="6" fill="#b86f50"/>
+    <rect x="14" y="12" width="20" height="4" fill="#feae34"/>
+    <rect x="14" y="12" width="3" height="4" fill="#f4f4f4"/>
+    <rect x="14" y="14" width="3" height="1" fill="#c0cbdc"/>
+    <rect x="31" y="12" width="1" height="4" fill="#ffcd75"/>
+    <rect x="20" y="13" width="8" height="1" fill="#ffcd75"/>
+  </g>
+
+  <!-- sparkles -->
+  <g class="spark" fill="#ffcd75">
+    <rect x="38" y="6" width="1" height="3"/>
+    <rect x="37" y="7" width="3" height="1"/>
+  </g>
+  <g class="spark spark2" fill="#73eff7">
+    <rect x="9" y="8" width="1" height="3"/>
+    <rect x="8" y="9" width="3" height="1"/>
+  </g>
+</svg>
